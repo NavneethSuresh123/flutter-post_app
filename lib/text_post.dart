@@ -5,7 +5,7 @@ class TextPost extends StatelessWidget {
   const TextPost({super.key});
 
   void _sharePost(BuildContext context) {
-    final String url = 'myapp://text';  // Custom URL scheme
+    final String url = 'myapp://text';
     Share.share('Check out this post: $url');
   }
 

@@ -24,9 +24,8 @@ class ImagePost extends StatelessWidget {
         children: [
           const Text('This is an image post.'),
           const SizedBox(height: 20),
-          // Displaying an image from assets
           Image.asset(
-            'assets/image.jpg', // Path to your local image asset
+            'assets/image.jpg',
             width: 300,
             height: 200,
             fit: BoxFit.cover,

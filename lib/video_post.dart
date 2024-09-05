@@ -18,13 +18,13 @@ class _VideoPostState extends State<VideoPost> {
     super.initState();
     _controller = VideoPlayerController.asset('assets/video.mp4')
       ..addListener(() {
-        setState(() {}); // Ensure the UI updates when the video state changes.
+        setState(() {});
       })
       ..setLooping(true);
 
     _initializeVideoPlayerFuture = _controller.initialize().then((_) {
-      print('Video Initialized'); // Debug statement
-      setState(() {}); // Trigger a rebuild once the video is initialized
+      print('Video Initialized');
+      setState(() {});
     }).catchError((error) {
       print('Error initializing video: $error'); // Debugging errors
     });

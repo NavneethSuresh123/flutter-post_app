@@ -3,8 +3,8 @@ import 'text_post.dart';
 import 'video_post.dart';
 import 'image_post.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class PostApp extends StatelessWidget {
+  const PostApp({super.key});
 
   @override
   Widget build(BuildContext context) {
